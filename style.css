@@ -738,6 +738,20 @@ button {
     margin-top: 1rem;
 }
 
+.resume-mobile {
+    display: none;
+}
+
+@media (max-width: 639px) {
+    .resume-embed {
+        display: none;
+    }
+
+    .resume-mobile {
+        display: block;
+    }
+}
+
 /* ---------- Larger screens ---------- */
 
 @media (min-width: 640px) {
