@@ -1,51 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaiah Foster - Resume</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-
-        * {
-            font-family: 'Inter', sans-serif;
-        }
-
-        .nav-blur {
-            backdrop-filter: blur(12px);
-            background: rgba(0, 0, 0, 0.8);
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-black text-white min-h-screen">
-    <nav class="fixed top-0 w-full z-50 nav-blur border-b border-white">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="index.html" class="text-2xl font-bold text-emerald-400">IF</a>
-            <div class="flex items-center space-x-6">
-                <a href="index.html" class="hover:text-emerald-400 transition">Home</a>
-                <a href="resume.html" class="hover:text-emerald-400 transition">Resume</a>
-            </div>
-        </div>
-    </nav>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <main class="pt-24 px-6 pb-10">
-        <div class="max-w-5xl mx-auto">
-            <div class="bg-neutral-900 border border-white rounded-lg overflow-hidden">
-                <div class="flex items-center justify-between px-6 py-4 border-b border-white">
-                    <h1 class="text-2xl font-semibold text-emerald-400">Resume</h1>
-                    <a href="resume.png" class="text-emerald-400 hover:text-emerald-300 transition" download>
-                        Download
-                    </a>
-                </div>
-                <div class="w-full">
-                    <img
-                        src="resume.png"
-                        alt="Isaiah Foster Resume"
-                        class="w-full h-auto"
-                    />
+    <header class="site-header">
+        <nav class="nav" aria-label="Main">
+            <div class="nav-bar">
+                <a href="index.html" class="logo gradient-text" aria-label="Isaiah Foster, home">IF</a>
+                <ul class="nav-links nav-links-static">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html" aria-current="page">Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main" class="resume-main">
+        <div class="resume-panel">
+            <div class="resume-bar">
+                <h1>Resume</h1>
+                <div class="resume-actions">
+                    <a href="resume.png" class="text-link" download>Download</a>
                 </div>
             </div>
+            <img src="resume.png" alt="Isaiah Foster Resume" width="1700" height="2200">
         </div>
     </main>
 </body>
