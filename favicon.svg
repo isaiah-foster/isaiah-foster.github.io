@@ -1,10 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#000"/>
-  <rect x="2" y="2" width="60" height="60" rx="10" fill="none" stroke="#10b981" stroke-width="3"/>
+  <rect width="64" height="64" rx="12" fill="#1d1c1a"/>
   <!-- "I" -->
-  <rect x="14" y="16" width="7" height="32" fill="#10b981"/>
+  <rect x="15" y="14" width="7" height="30" fill="#f6f4ef"/>
   <!-- "F" -->
-  <rect x="28" y="16" width="7" height="32" fill="#10b981"/>
-  <rect x="28" y="16" width="22" height="7" fill="#10b981"/>
-  <rect x="28" y="29" width="17" height="7" fill="#10b981"/>
+  <rect x="29" y="14" width="7" height="30" fill="#f6f4ef"/>
+  <rect x="29" y="14" width="21" height="7" fill="#f6f4ef"/>
+  <rect x="29" y="26" width="16" height="6" fill="#f6f4ef"/>
+  <!-- Palouse hill -->
+  <path d="M8 54C20 45 30 46 40 50S56 52 58 49" fill="none" stroke="#c9a66b" stroke-width="3.5" stroke-linecap="round"/>
 </svg>
