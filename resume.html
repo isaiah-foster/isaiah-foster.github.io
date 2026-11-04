@@ -3,59 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isaiah Foster | Resume</title>
+    <title>Resume | Isaiah Foster</title>
     <meta name="description" content="Resume of Isaiah Foster, a computer science student at Washington State University focused on Linux systems, security, and AI/ML research.">
     <link rel="canonical" href="https://isaiah-foster.github.io/resume.html">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <meta name="theme-color" content="#000000">
+    <meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#141412" media="(prefers-color-scheme: dark)">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Isaiah Foster | Resume">
+    <meta property="og:title" content="Resume | Isaiah Foster">
     <meta property="og:description" content="Resume of Isaiah Foster, a computer science student at Washington State University focused on Linux systems, security, and AI/ML research.">
     <meta property="og:url" content="https://isaiah-foster.github.io/resume.html">
     <meta property="og:site_name" content="Isaiah Foster">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Isaiah Foster | Resume">
+    <meta name="twitter:title" content="Resume | Isaiah Foster">
     <meta name="twitter:description" content="Resume of Isaiah Foster, a computer science student at Washington State University focused on Linux systems, security, and AI/ML research.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header">
-        <nav class="nav" aria-label="Main">
-            <div class="nav-bar">
-                <a href="index.html" class="logo gradient-text" aria-label="Isaiah Foster, home">IF</a>
-                <ul class="nav-links nav-links-static">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resume.html" aria-current="page">Resume</a></li>
-                </ul>
-            </div>
+    <header class="site-header wrap">
+        <a href="index.html" class="site-name">Isaiah Foster</a>
+        <nav aria-label="Main">
+            <ul class="nav-links">
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="resume.html" aria-current="page">Resume</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main id="main" class="resume-main">
-        <div class="resume-panel">
-            <div class="resume-bar">
-                <h1>Resume</h1>
-                <div class="resume-actions">
-                    <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="text-link resume-new-tab">Open in new tab</a>
-                    <a href="resume.pdf" class="btn btn-primary" download="Isaiah-Foster-Resume.pdf">Download PDF</a>
-                </div>
-            </div>
-            <object class="resume-embed" data="resume.pdf" type="application/pdf" aria-label="Isaiah Foster's resume (PDF)">
-                <div class="resume-fallback">
-                    <p>Your browser can't show the PDF here.</p>
-                    <p><a href="resume.pdf" class="text-link">Open the resume PDF</a></p>
-                </div>
-            </object>
-            <div class="resume-fallback resume-mobile">
-                <p>PDFs don't preview well on small screens.</p>
-                <p><a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Open resume PDF</a></p>
+    <main id="main" class="resume-main wrap">
+        <div class="resume-bar">
+            <h1>Resume</h1>
+            <div class="resume-actions">
+                <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-new-tab">Open in new tab</a>
+                <a href="resume.pdf" class="btn" download="Isaiah-Foster-Resume.pdf">Download PDF</a>
             </div>
         </div>
+        <object class="resume-embed" data="resume.pdf" type="application/pdf" aria-label="Isaiah Foster's resume (PDF)">
+            <div class="resume-fallback">
+                <p>Your browser can't show the PDF here.</p>
+                <p><a href="resume.pdf">Open the resume PDF</a></p>
+            </div>
+        </object>
+        <div class="resume-fallback resume-mobile">
+            <p>PDFs don't preview well on small screens.</p>
+            <p><a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Open resume PDF</a></p>
+        </div>
     </main>
+
+    <footer class="site-footer wrap">
+        <p>&copy; 2026 Isaiah Foster</p>
+        <p><a href="mailto:isaiahfoster@gmail.com">isaiahfoster@gmail.com</a></p>
+    </footer>
 </body>
 </html>

@@ -3,469 +3,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isaiah Foster | Systems & Security Engineer</title>
+    <title>Isaiah Foster</title>
     <meta name="description" content="Isaiah Foster is a computer science student at Washington State University working on Linux systems, security, and AI/ML research.">
     <link rel="canonical" href="https://isaiah-foster.github.io/">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <meta name="theme-color" content="#000000">
+    <meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#141412" media="(prefers-color-scheme: dark)">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Isaiah Foster | Systems &amp; Security Engineer">
+    <meta property="og:title" content="Isaiah Foster">
     <meta property="og:description" content="Isaiah Foster is a computer science student at Washington State University working on Linux systems, security, and AI/ML research.">
     <meta property="og:url" content="https://isaiah-foster.github.io/">
     <meta property="og:site_name" content="Isaiah Foster">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Isaiah Foster | Systems &amp; Security Engineer">
+    <meta name="twitter:title" content="Isaiah Foster">
     <meta name="twitter:description" content="Isaiah Foster is a computer science student at Washington State University working on Linux systems, security, and AI/ML research.">
-    <script>document.documentElement.classList.add('js');</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header">
-        <nav class="nav" aria-label="Main">
-            <div class="nav-bar">
-                <a href="#home" class="logo gradient-text" aria-label="Isaiah Foster, back to top">IF</a>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                </ul>
-                <button id="mobile-menu-btn" class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
-                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-            <ul id="mobile-menu" class="mobile-menu" hidden>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+    <header class="site-header wrap">
+        <a href="index.html" class="site-name">Isaiah Foster</a>
+        <nav aria-label="Main">
+            <ul class="nav-links">
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="resume.html">Resume</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="main">
-        <!-- Hero -->
-        <section id="home" class="hero" aria-label="Introduction">
-            <div class="hero-inner">
-                <span class="eyebrow">Systems & Security Engineer</span>
-                <h1>Hi, I'm <span class="gradient-text">Isaiah Foster</span></h1>
-                <p class="typing" id="typing-text" aria-hidden="true"
-                   data-phrases='["Linux systems", "Security", "AI/ML research"]'></p>
-                <p class="lead">
-                    Computer science student at Washington State University building Linux systems and security tooling, with AI/ML research experience.
-                </p>
-                <div class="btn-row">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="resume.html" class="btn btn-outline">View Resume</a>
-                </div>
-                <ul class="socials">
-                    <li>
-                        <a href="https://github.com/isaiah-foster" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/isaiah-foster001" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:isaiahfoster@gmail.com" aria-label="Email">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                            </svg>
-                        </a>
-                    </li>
+        <section class="intro wrap" aria-labelledby="intro-title">
+            <h1 id="intro-title">Isaiah Foster</h1>
+            <p class="intro-lead">
+                Computer science student at Washington State University. I work on Linux systems,
+                security tooling, and machine learning privacy research.
+            </p>
+            <p class="intro-body">
+                I'm currently a Linux software engineering intern at Schweitzer Engineering Laboratories.
+                I'm looking for software engineering and security internships.
+            </p>
+            <div class="intro-actions">
+                <a href="resume.html" class="btn">Resume</a>
+                <ul class="link-list">
+                    <li><a href="https://github.com/isaiah-foster" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/isaiah-foster001" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="mailto:isaiahfoster@gmail.com">isaiahfoster@gmail.com</a></li>
                 </ul>
             </div>
+            <dl class="facts">
+                <div>
+                    <dt>Based in</dt>
+                    <dd>Pullman, WA</dd>
+                </div>
+                <div>
+                    <dt>Degree</dt>
+                    <dd>B.S. Computer Science, May 2028</dd>
+                </div>
+                <div>
+                    <dt>GPA</dt>
+                    <dd>4.0 / 4.0</dd>
+                </div>
+            </dl>
         </section>
 
-        <!-- About -->
-        <section id="about" class="section section-fade" aria-labelledby="about-title">
-            <div class="container">
-                <h2 id="about-title" class="section-title gradient-text">About Me</h2>
-                <div class="about-grid">
-                    <div class="card">
-                        <h3>Background</h3>
-                        <p>
-                            I'm a computer science student at Washington State University who works on
-                            Linux systems, security, and AI/ML research.
-                        </p>
-                        <p>
-                            I'm currently a Linux Software Engineering Intern at Schweitzer Engineering
-                            Laboratories, and I'm looking for software engineering and security internships.
-                        </p>
-                    </div>
-                    <div class="stack">
-                        <div class="card">
-                            <h3>Location</h3>
-                            <p>Pullman, WA</p>
-                        </div>
-                        <div class="card stack-lines">
-                            <h3>Education</h3>
-                            <p class="strong">Washington State University</p>
-                            <p class="muted">B.S. Computer Science, expected May 2028</p>
-                            <p class="muted">CAE-CO Certificate, alongside degree</p>
-                            <p class="highlight">GPA 4.0/4.0</p>
-                        </div>
-                        <div class="card">
-                            <h3>Email</h3>
-                            <p><a href="mailto:isaiahfoster@gmail.com" class="text-link">isaiahfoster@gmail.com</a></p>
-                        </div>
-                    </div>
-                </div>
+        <div class="landscape">
+            <img src="palouse.svg" alt="" width="1200" height="240">
+        </div>
 
-                <div class="card github-activity">
-                    <h3 class="gradient-text">GitHub Activity</h3>
-                    <a href="https://github.com/isaiah-foster" target="_blank" rel="noopener noreferrer">
-                        <img src="https://ghchart.rshah.org/10b981/isaiah-foster" alt="GitHub contribution chart for isaiah-foster" width="663" height="104" loading="lazy">
-                    </a>
-                </div>
+        <section id="experience" class="section wrap" aria-labelledby="experience-title">
+            <h2 id="experience-title">Experience</h2>
+            <div class="section-body">
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3>Linux Software Engineering Intern</h3>
+                        <p class="date">Mar 2026 – Present</p>
+                    </div>
+                    <p class="entry-sub">Schweitzer Engineering Laboratories · Pullman, WA</p>
+                    <ul class="bullets">
+                        <li>Refactored a C++ firewall daemon for proprietary network switches to apply rule updates atomically, eliminating a timing gap where all traffic was dropped; wrote 15 functional tests and 3 unit tests covering rule application</li>
+                        <li>Restored a Jenkins pipeline of 1,700+ tests that had been broken for 3 months by refactoring a configuration with Groovy, and revived an abandoned C# test suite by fixing over 200 failing unit tests required to ship regulation-compliant firmware images</li>
+                        <li>Built a cryptographic dev tool to generate PKCS#12 and X.509 test artifacts for on-device certificate import/export, including deliberately malformed files for negative testing of parsing and validation logic</li>
+                        <li>Wrote Python functional tests across a large firmware monorepo, debugging failures through the full stack: on-device behavior, Yocto/BitBake builds, C++ daemons, and C# orchestration; reviewed PRs for security-critical C++ code</li>
+                    </ul>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3>Teaching Assistant, C/C++ Data Structures</h3>
+                        <p class="date">Jan 2026 – May 2026</p>
+                    </div>
+                    <p class="entry-sub">Washington State University · Pullman, WA</p>
+                    <ul class="bullets">
+                        <li>Led a lab section of 17 students weekly; taught foundational concepts and helped students debug code</li>
+                    </ul>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3>Cybersecurity Intern</h3>
+                        <p class="date">Jun 2025 – Aug 2025</p>
+                    </div>
+                    <p class="entry-sub">Air Force Research Lab / Griffiss Institute · Rome, NY</p>
+                    <ul class="bullets">
+                        <li>Performed vulnerability analysis on a proprietary operating system using wolfSSL, revealing issues missed in a six-figure third-party report</li>
+                        <li>Placed 1st of 15 teams (55 interns) in the final intern cyber operation, using iptables, netcat, Ghidra, and netmap</li>
+                        <li>Built directional 2.4 GHz antennas for long-range network testing</li>
+                        <li>Presented findings to Pentagon cyber professionals; work recognized with a New York State Assembly Certificate of Merit</li>
+                    </ul>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3>Undergraduate Researcher, LLM Privacy &amp; Security</h3>
+                        <p class="date">Jan 2025 – May 2025</p>
+                    </div>
+                    <p class="entry-sub">Washington State University, School of EECS · Pullman, WA</p>
+                    <ul class="bullets">
+                        <li>Built an attack framework in Python to test LLMs for PII leakage, implementing extraction, reconstruction, and inference attacks against fine-tuned GPT-2 and OpenAI API models; used Faker-generated synthetic PII and Microsoft Presidio to measure leakage</li>
+                        <li>Implemented Proactive Privacy Amnesia in PyTorch and Hugging Face Transformers, a two-phase fine-tuning defense that unlearns memorized PII, cutting leakage by 55% at a cost of 5% higher perplexity</li>
+                        <li>Presented findings as a poster at CySER 2025 under mentorship of a PhD student and faculty advisor</li>
+                    </ul>
+                    <ul class="entry-links">
+                        <li><a href="https://github.com/isaiah-foster/LLM-defense-research-project" target="_blank" rel="noopener noreferrer">Code<span class="sr-only"> for the LLM privacy research</span> <span aria-hidden="true">↗</span></a></li>
+                        <li><a href="https://github.com/isaiah-foster/LLM-defense-research-project/blob/ChatUI/GPT2-Testing/Misc/CySER_poster_2025.jpg" target="_blank" rel="noopener noreferrer">CySER 2025 poster <span aria-hidden="true">↗</span></a></li>
+                    </ul>
+                </article>
             </div>
         </section>
 
-        <!-- Skills -->
-        <section id="skills" class="section section-fade" aria-labelledby="skills-title">
-            <div class="container">
-                <h2 id="skills-title" class="section-title gradient-text">Skills</h2>
-                <div class="skills-grid">
-                    <div class="card">
-                        <h3>Languages</h3>
-                        <ul class="tags">
-                            <li class="tag">C++</li>
-                            <li class="tag">C</li>
-                            <li class="tag">Python</li>
-                            <li class="tag">Go</li>
-                            <li class="tag">C#</li>
-                            <li class="tag">Bash</li>
-                            <li class="tag">JavaScript</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <h3>Systems &amp; Networking</h3>
-                        <ul class="tags">
-                            <li class="tag">Linux</li>
-                            <li class="tag">eBPF (XDP/TC)</li>
-                            <li class="tag">libbpf</li>
-                            <li class="tag">iptables</li>
-                            <li class="tag">Wireshark</li>
-                            <li class="tag">tcpdump</li>
-                            <li class="tag">SSH</li>
-                            <li class="tag">TCP/IP</li>
-                            <li class="tag">HTTP</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <h3>Security</h3>
-                        <ul class="tags">
-                            <li class="tag">X.509/PKI</li>
-                            <li class="tag">Vulnerability analysis</li>
-                            <li class="tag">Reverse engineering (Ghidra)</li>
-                            <li class="tag">LLM privacy attacks &amp; defenses</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <h3>Tools</h3>
-                        <ul class="tags">
-                            <li class="tag">Git</li>
-                            <li class="tag">Jenkins</li>
-                            <li class="tag">GoogleTest</li>
-                            <li class="tag">PyTest</li>
-                            <li class="tag">Yocto/BitBake</li>
-                            <li class="tag">Gherkin/Behave</li>
-                            <li class="tag">Docker</li>
-                            <li class="tag">Make</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <h3>AI/ML</h3>
-                        <ul class="tags">
-                            <li class="tag">PyTorch</li>
-                            <li class="tag">Hugging Face Transformers</li>
-                            <li class="tag">CUDA</li>
-                            <li class="tag">Ollama</li>
-                            <li class="tag">FastAPI</li>
-                        </ul>
-                    </div>
-                </div>
+        <section id="projects" class="section wrap" aria-labelledby="projects-title">
+            <h2 id="projects-title">Projects</h2>
+            <div class="section-body">
+                <article class="entry">
+                    <h3><a href="https://github.com/isaiah-foster/Visual-Network" target="_blank" rel="noopener noreferrer">VisualNetwork <span aria-hidden="true">↗</span></a></h3>
+                    <p>
+                        Linux network traffic analyzer built on a small Agile team, where I did all kernel-side development.
+                        C eBPF programs on XDP (ingress) and TC (egress) hooks classify packets by protocol and address
+                        and keep counters in BPF maps. A Go userspace daemon reads the maps via a ring buffer, aggregates
+                        volume, protocol, and latency metrics, and serves them to a React dashboard through a reverse proxy.
+                    </p>
+                    <p class="tech"><span class="sr-only">Built with: </span>C · Go · eBPF (XDP/TC) · libbpf · Linux · Make</p>
+                </article>
+
+                <article class="entry">
+                    <h3><a href="https://github.com/isaiah-foster/lockdown-ide" target="_blank" rel="noopener noreferrer">Lockdown IDE <span aria-hidden="true">↗</span></a></h3>
+                    <p>
+                        IDE for student coding exams with a Monaco editor and instructor-controlled aid levels. Exam configs are
+                        Ed25519-signed, aid levels are also enforced server-side in the LSP proxy, student activity forms a
+                        hash-chained, tamper-evident event log, and code runs in a bubblewrap sandbox with no network access.
+                    </p>
+                    <p class="tech"><span class="sr-only">Built with: </span>TypeScript · React · Monaco · Fastify · SQLite · bubblewrap</p>
+                </article>
+
+                <article class="entry">
+                    <h3><a href="https://github.com/isaiah-foster/LLM-defense-research-project" target="_blank" rel="noopener noreferrer">LLM Privacy Research <span aria-hidden="true">↗</span></a></h3>
+                    <p>
+                        Python framework that tests LLMs for PII leakage, paired with a Proactive Privacy Amnesia fine-tuning
+                        defense. Presented as a poster at CySER 2025; details are under Experience.
+                    </p>
+                    <p class="tech"><span class="sr-only">Built with: </span>Python · PyTorch · Transformers · Presidio</p>
+                </article>
+
+                <article class="entry">
+                    <h3><a href="https://github.com/isaiah-foster/RAGForge" target="_blank" rel="noopener noreferrer">RAGForge <span aria-hidden="true">↗</span></a></h3>
+                    <p>
+                        CLI tool for setting up retrieval-augmented generation (RAG). Supports local or cloud inference,
+                        localhost or LAN-exposed API endpoints, and user-chosen embedding models, LLMs, and database configurations.
+                    </p>
+                    <p class="tech"><span class="sr-only">Built with: </span>Python · FastAPI · Ollama · ChromaDB · Typer</p>
+                </article>
+
+                <article class="entry">
+                    <h3><a href="https://github.com/isaiah-foster/CUDA-Kernel-Bundle" target="_blank" rel="noopener noreferrer">CUDA Kernel Bundle <span aria-hidden="true">↗</span></a></h3>
+                    <p>Ongoing practice repo for learning GPU architecture and writing CUDA kernels.</p>
+                    <p class="tech"><span class="sr-only">Built with: </span>C++ · CUDA · NVCC · Nsight</p>
+                </article>
+
+                <article class="entry">
+                    <h3><a href="https://github.com/isaiah-foster/Pencil-Shooter-Game" target="_blank" rel="noopener noreferrer">Pencil Shooter Game <span aria-hidden="true">↗</span></a></h3>
+                    <p>
+                        2D shooter built in C++ with SFML as a data structures final group project, using inheritance,
+                        polymorphism, and data structures.
+                    </p>
+                    <p class="tech"><span class="sr-only">Built with: </span>C++ · SFML</p>
+                </article>
             </div>
         </section>
 
-        <!-- Projects -->
-        <section id="projects" class="section section-fade" aria-labelledby="projects-title">
-            <div class="container">
-                <h2 id="projects-title" class="section-title gradient-text">Projects</h2>
-                <div class="project-grid">
-                    <article class="card card-hover project">
-                        <h3>VisualNetwork</h3>
-                        <p>
-                            Linux network traffic analyzer built on a small Agile team, where I did all kernel-side development.
-                            C eBPF programs on XDP (ingress) and TC (egress) hooks classify packets by protocol and address
-                            and keep counters in BPF maps. A Go userspace daemon reads the maps via a ring buffer, aggregates
-                            volume, protocol, and latency metrics, and serves them to a React dashboard through a reverse proxy.
-                        </p>
-                        <ul class="tags" aria-label="Technologies">
-                            <li class="tag">C</li>
-                            <li class="tag">Go</li>
-                            <li class="tag">eBPF (XDP/TC)</li>
-                            <li class="tag">libbpf</li>
-                            <li class="tag">Linux</li>
-                            <li class="tag">Make</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://github.com/isaiah-foster/Visual-Network" target="_blank" rel="noopener noreferrer" class="text-link">
-                                View code<span class="sr-only"> for VisualNetwork on GitHub</span>
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="card card-hover project">
-                        <h3>RAGForge</h3>
-                        <p>
-                            CLI tool for setting up retrieval-augmented generation (RAG). Supports local or cloud inference,
-                            localhost or LAN-exposed API endpoints, and user-chosen embedding models, LLMs, and database configurations.
-                        </p>
-                        <ul class="tags" aria-label="Technologies">
-                            <li class="tag">Python</li>
-                            <li class="tag">FastAPI</li>
-                            <li class="tag">Ollama</li>
-                            <li class="tag">ChromaDB</li>
-                            <li class="tag">Typer</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://github.com/isaiah-foster/RAGForge" target="_blank" rel="noopener noreferrer" class="text-link">
-                                View code<span class="sr-only"> for RAGForge on GitHub</span>
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="card card-hover project">
-                        <h3>CUDA Kernel Bundle</h3>
-                        <p>
-                            Ongoing practice repo for learning GPU architecture and writing CUDA kernels.
-                        </p>
-                        <ul class="tags" aria-label="Technologies">
-                            <li class="tag">C++</li>
-                            <li class="tag">CUDA</li>
-                            <li class="tag">NVCC</li>
-                            <li class="tag">Nsight</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://github.com/isaiah-foster/CUDA-Kernel-Bundle" target="_blank" rel="noopener noreferrer" class="text-link">
-                                View code<span class="sr-only"> for CUDA Kernel Bundle on GitHub</span>
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="card card-hover project">
-                        <h3>Lockdown IDE</h3>
-                        <p>
-                            IDE for student coding exams with a Monaco editor and instructor-controlled aid levels. Exam configs are
-                            Ed25519-signed, aid levels are also enforced server-side in the LSP proxy, student activity forms a
-                            hash-chained, tamper-evident event log, and code runs in a bubblewrap sandbox with no network access.
-                        </p>
-                        <ul class="tags" aria-label="Technologies">
-                            <li class="tag">TypeScript</li>
-                            <li class="tag">React</li>
-                            <li class="tag">Monaco</li>
-                            <li class="tag">Fastify</li>
-                            <li class="tag">SQLite</li>
-                            <li class="tag">bubblewrap</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://github.com/isaiah-foster/lockdown-ide" target="_blank" rel="noopener noreferrer" class="text-link">
-                                View code<span class="sr-only"> for Lockdown IDE on GitHub</span>
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="card card-hover project">
-                        <h3>LLM Privacy Research</h3>
-                        <p>
-                            Python framework that tests LLMs for PII leakage, paired with a Proactive Privacy Amnesia fine-tuning
-                            defense. Presented as a poster at CySER 2025; details are under Experience.
-                        </p>
-                        <ul class="tags" aria-label="Technologies">
-                            <li class="tag">Python</li>
-                            <li class="tag">PyTorch</li>
-                            <li class="tag">Transformers</li>
-                            <li class="tag">Presidio</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://github.com/isaiah-foster/LLM-defense-research-project" target="_blank" rel="noopener noreferrer" class="text-link">
-                                View code<span class="sr-only"> for the LLM privacy research on GitHub</span>
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                            </a>
-                            <a href="https://github.com/isaiah-foster/LLM-defense-research-project/blob/ChatUI/GPT2-Testing/Misc/CySER_poster_2025.jpg" target="_blank" rel="noopener noreferrer" class="text-link">
-                                View poster<span class="sr-only"> from CySER 2025</span>
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="card card-hover project">
-                        <h3>Pencil Shooter Game</h3>
-                        <p>
-                            2D shooter built in C++ with SFML as a data structures final group project, using inheritance,
-                            polymorphism, and data structures.
-                        </p>
-                        <ul class="tags" aria-label="Technologies">
-                            <li class="tag">C++</li>
-                            <li class="tag">SFML</li>
-                            <li class="tag">Data Structures</li>
-                            <li class="tag">OOP</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://github.com/isaiah-foster/Pencil-Shooter-Game" target="_blank" rel="noopener noreferrer" class="text-link">
-                                View code<span class="sr-only"> for Pencil Shooter Game on GitHub</span>
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                            </a>
-                        </div>
-                    </article>
-                </div>
+        <section id="skills" class="section wrap" aria-labelledby="skills-title">
+            <h2 id="skills-title">Skills</h2>
+            <div class="section-body">
+                <dl class="skills">
+                    <div>
+                        <dt>Languages</dt>
+                        <dd>C++, C, Python, Go, C#, Bash, JavaScript</dd>
+                    </div>
+                    <div>
+                        <dt>Systems &amp; networking</dt>
+                        <dd>Linux, eBPF (XDP/TC), libbpf, iptables, Wireshark, tcpdump, SSH, TCP/IP, HTTP</dd>
+                    </div>
+                    <div>
+                        <dt>Security</dt>
+                        <dd>X.509/PKI, vulnerability analysis, reverse engineering (Ghidra), LLM privacy attacks and defenses</dd>
+                    </div>
+                    <div>
+                        <dt>Tools</dt>
+                        <dd>Git, Jenkins, GoogleTest, PyTest, Yocto/BitBake, Gherkin/Behave, Docker, Make</dd>
+                    </div>
+                    <div>
+                        <dt>AI/ML</dt>
+                        <dd>PyTorch, Hugging Face Transformers, CUDA, Ollama, FastAPI</dd>
+                    </div>
+                </dl>
             </div>
         </section>
 
-        <!-- Experience -->
-        <section id="experience" class="section section-fade" aria-labelledby="experience-title">
-            <div class="container-narrow">
-                <h2 id="experience-title" class="section-title gradient-text">Experience</h2>
-                <div class="timeline">
-                    <article class="job">
-                        <div class="job-head">
-                            <div>
-                                <h3>Linux Software Engineering Intern</h3>
-                                <p class="job-org">Schweitzer Engineering Laboratories</p>
-                                <p class="job-loc">Pullman, WA</p>
-                            </div>
-                            <p class="job-date">Mar. 2026 – Present</p>
-                        </div>
-                        <ul class="bullets">
-                            <li>Refactored a C++ firewall daemon for proprietary network switches to apply rule updates atomically, eliminating a timing gap where all traffic was dropped; wrote 15 functional tests and 3 unit tests covering rule application</li>
-                            <li>Restored a Jenkins pipeline of 1,700+ tests that had been broken for 3 months by refactoring a configuration with Groovy, and revived an abandoned C# test suite by fixing over 200 failing unit tests required to ship regulation-compliant firmware images</li>
-                            <li>Built a cryptographic dev tool to generate PKCS#12 and X.509 test artifacts for on-device certificate import/export, including deliberately malformed files for negative testing of parsing and validation logic</li>
-                            <li>Wrote Python functional tests across a large firmware monorepo, debugging failures through the full stack: on-device behavior, Yocto/BitBake builds, C++ daemons, and C# orchestration; reviewed PRs for security-critical C++ code</li>
-                        </ul>
-                    </article>
-
-                    <article class="job">
-                        <div class="job-head">
-                            <div>
-                                <h3>Teaching Assistant, C/C++ Data Structures</h3>
-                                <p class="job-org">Washington State University</p>
-                                <p class="job-loc">Pullman, WA</p>
-                            </div>
-                            <p class="job-date">Jan. 2026 – May 2026</p>
-                        </div>
-                        <ul class="bullets">
-                            <li>Led a lab section of 17 students weekly; taught foundational concepts and helped students debug code</li>
-                        </ul>
-                    </article>
-
-                    <article class="job">
-                        <div class="job-head">
-                            <div>
-                                <h3>Cybersecurity Intern</h3>
-                                <p class="job-org">Air Force Research Lab / Griffiss Institute</p>
-                                <p class="job-loc">Rome, NY</p>
-                            </div>
-                            <p class="job-date">Jun. 2025 – Aug. 2025</p>
-                        </div>
-                        <ul class="bullets">
-                            <li>Performed vulnerability analysis on a proprietary operating system using wolfSSL, revealing issues missed in a six-figure third-party report</li>
-                            <li>Placed 1st of 15 teams (55 interns) in the final intern cyber operation, using iptables, netcat, Ghidra, and netmap</li>
-                            <li>Built directional 2.4 GHz antennas for long-range network testing</li>
-                            <li>Presented findings to Pentagon cyber professionals; work recognized with a New York State Assembly Certificate of Merit</li>
-                        </ul>
-                    </article>
-
-                    <article class="job">
-                        <div class="job-head">
-                            <div>
-                                <h3>Undergraduate Researcher, LLM Privacy & Security</h3>
-                                <p class="job-org">Washington State University, School of EECS</p>
-                                <p class="job-loc">Pullman, WA</p>
-                            </div>
-                            <p class="job-date">Jan. 2025 – May 2025</p>
-                        </div>
-                        <ul class="bullets">
-                            <li>Built an attack framework in Python to test LLMs for PII leakage, implementing extraction, reconstruction, and inference attacks against fine-tuned GPT-2 and OpenAI API models; used Faker-generated synthetic PII and Microsoft Presidio to measure leakage</li>
-                            <li>Implemented Proactive Privacy Amnesia in PyTorch and Hugging Face Transformers, a two-phase fine-tuning defense that unlearns memorized PII, cutting leakage by 55% at a cost of 5% higher perplexity</li>
-                            <li>Presented findings as a poster at CySER 2025 under mentorship of a PhD student and faculty advisor</li>
-                        </ul>
-                        <div class="job-links">
-                            <a href="https://github.com/isaiah-foster/LLM-defense-research-project" target="_blank" rel="noopener noreferrer" class="text-link">
-                                View code<span class="sr-only"> for the LLM privacy research on GitHub</span>
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                            </a>
-                            <a href="https://github.com/isaiah-foster/LLM-defense-research-project/blob/ChatUI/GPT2-Testing/Misc/CySER_poster_2025.jpg" target="_blank" rel="noopener noreferrer" class="text-link">
-                                View poster<span class="sr-only"> from CySER 2025</span>
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="job">
-                        <div class="job-head">
-                            <div>
-                                <h3>VICEROY Scholar</h3>
-                                <p class="job-org">DoD-funded cyber operations program</p>
-                                <p class="job-loc">Washington State University, Pullman, WA</p>
-                            </div>
-                            <p class="job-date">Aug. 2024 – Present</p>
-                        </div>
-                        <ul class="bullets">
-                            <li>Pursuing the Center of Academic Excellence in Cyber Operations (CAE-CO) Certificate alongside my degree</li>
-                            <li>Member of the VICEROY National Institute</li>
-                        </ul>
-                    </article>
-                </div>
-
-                <div class="extras">
-                    <h3>Leadership & Competitions</h3>
-                    <div class="extras-grid">
-                        <div class="card">
-                            <h4>Triangle Fraternity (STEM only)</h4>
-                            <ul class="bullets">
-                                <li>Vice President (2025-present)</li>
-                                <li>Secretary (2024-2025)</li>
-                                <li>Founding member</li>
-                            </ul>
-                        </div>
-                        <div class="card">
-                            <h4>Cyber Competitions</h4>
-                            <p>National Cyber League (CTF), Spokane Cyber Cup, Concord Dawn (DoD offensive op), Fiery Gambit, Shieldbearer</p>
-                        </div>
+        <section id="education" class="section wrap" aria-labelledby="education-title">
+            <h2 id="education-title">Education</h2>
+            <div class="section-body">
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3>Washington State University</h3>
+                        <p class="date">Expected May 2028</p>
                     </div>
-                    <div class="card">
-                        <h4>Awards</h4>
-                        <p>WSU IFC Scholar of the Month • President's Honor Roll (all semesters) • New York State Assembly Certificate of Merit</p>
+                    <p class="entry-sub">B.S. Computer Science · GPA 4.0 / 4.0</p>
+                    <ul class="bullets">
+                        <li>VICEROY Scholar (Aug 2024 – Present), a DoD-funded cyber operations program, and member of the VICEROY National Institute</li>
+                        <li>Earning the Center of Academic Excellence in Cyber Operations (CAE-CO) Certificate alongside my degree</li>
+                    </ul>
+                </article>
+
+                <dl class="skills">
+                    <div>
+                        <dt>Leadership</dt>
+                        <dd>Triangle Fraternity (STEM only): founding member, Secretary (2024–2025), Vice President (2025–present)</dd>
                     </div>
-                </div>
+                    <div>
+                        <dt>Competitions</dt>
+                        <dd>National Cyber League (CTF), Spokane Cyber Cup, Concord Dawn (DoD offensive op), Fiery Gambit, Shieldbearer</dd>
+                    </div>
+                    <div>
+                        <dt>Awards</dt>
+                        <dd>WSU IFC Scholar of the Month, President's Honor Roll (all semesters), New York State Assembly Certificate of Merit</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <section id="contact" class="section wrap" aria-labelledby="contact-title">
+            <h2 id="contact-title">Contact</h2>
+            <div class="section-body">
+                <p class="contact-line">
+                    Email is the best way to reach me:
+                    <a href="mailto:isaiahfoster@gmail.com">isaiahfoster@gmail.com</a>.
+                    You can also find me on
+                    <a href="https://github.com/isaiah-foster" target="_blank" rel="noopener noreferrer">GitHub</a> and
+                    <a href="https://www.linkedin.com/in/isaiah-foster001" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+                </p>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer wrap">
         <p>&copy; 2026 Isaiah Foster</p>
+        <p><a href="#main">Back to top</a></p>
     </footer>
 </body>
 </html>
