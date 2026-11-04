@@ -270,7 +270,8 @@ a:hover {
 
 .landscape img {
     width: 100%;
-    height: clamp(110px, 20vw, 240px);
+    /* The art is 16:1, so past 3840px it grows rather than losing its top. */
+    height: clamp(110px, 20vw, max(240px, 100vw / 16));
     object-fit: cover;
     object-position: center bottom;
 }

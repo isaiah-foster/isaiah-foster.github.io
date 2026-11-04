@@ -6,8 +6,14 @@ Run from the repo root:  python3 tools/palouse_art.py
 import math
 import random
 
-WIDTH, HEIGHT = 1200, 240
+# The drawing is much wider than most screens: the page shows it at a fixed height
+# and crops the sides, so wider screens reveal more hills rather than zooming in.
+# The middle 1200 units (x = 0 to 1200, centered on 600) are what a 1200px screen sees.
+WIDTH, HEIGHT = 3840, 240
+LEFT = 600 - WIDTH // 2
 STEP = 50
+# Lines overshoot the viewBox so their ends and the crop-row offsets stay out of view.
+FIRST_X, LAST_X = -1450, 2600
 random.seed(7)
 
 LIGHT = {"line": "#9a8f7c", "fill": "#f6f4ef", "sun": "#c9a66b"}
@@ -17,7 +23,7 @@ DARK = {"line": "#6f685d", "fill": "#141412", "sun": "#8a7550"}
 def ridge(base, amp, waves):
     """Points along a hill line: a base height plus a few overlapping sine waves."""
     pts = []
-    for x in range(-2 * STEP, WIDTH + 3 * STEP, STEP):
+    for x in range(FIRST_X, LAST_X + STEP, STEP):
         y = base
         for length, weight, phase in waves:
             y -= amp * weight * math.sin(2 * math.pi * x / length + phase)
@@ -55,7 +61,7 @@ layers = [
 defs, body = [], []
 for i, (base, amp, stripes) in enumerate(layers):
     line = smooth_path(ridge(base, amp, random_waves(3)))
-    hill = f"{line}V{HEIGHT + 10}H{-2 * STEP}Z"
+    hill = f"{line}V{HEIGHT + 10}H{FIRST_X}Z"
     defs.append(f'<path id="r{i}" d="{line}"/>')
     defs.append(f'<clipPath id="c{i}"><path d="{hill}"/></clipPath>')
     body.append(f'<path class="h" d="{hill}"/>')
@@ -67,7 +73,7 @@ for i, (base, amp, stripes) in enumerate(layers):
         )
         body.append(f'<g class="row" clip-path="url(#c{i})">{rows}</g>')
 
-svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" preserveAspectRatio="xMidYMax slice">
+svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="{LEFT} 0 {WIDTH} {HEIGHT}" preserveAspectRatio="xMidYMax slice">
 <style>
 .h{{fill:{LIGHT['fill']};stroke:{LIGHT['line']};stroke-width:1.6}}
 .row{{fill:none;stroke:{LIGHT['line']};stroke-width:1;opacity:.55}}
